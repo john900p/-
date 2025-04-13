@@ -17,6 +17,7 @@
       height: 100vh;
       flex-direction: column;
       text-align: center;
+      overflow: hidden;
     }
 
     h1 {
@@ -34,24 +35,18 @@
     .youtube-link {
       font-size: 1.3em;
       margin: 20px;
-      color: #800000;
       animation: fadeIn 2s 1s ease-out;
     }
 
-    .youtube-link a {
-      color: #800000;
-      text-decoration: none;
-      font-weight: bold;
+    .youtube-logo {
+      width: 70px;
+      margin-bottom: 20px;
+      cursor: pointer;
       transition: transform 0.3s ease;
     }
 
-    .youtube-link a:hover {
+    .youtube-logo:hover {
       transform: scale(1.1);
-    }
-
-    .youtube-logo {
-      width: 50px;
-      margin-bottom: 20px;
     }
 
     .shapes {
@@ -59,8 +54,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       background-color: rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       animation: shapeAnimation 10s infinite alternate;
@@ -83,6 +78,7 @@
         transform: scale(1.2) rotate(360deg);
       }
     }
+
   </style>
 </head>
 <body>
@@ -94,9 +90,13 @@
 
   <p>اهلا بكم في موقع احلا تفاحه 🍏</p>
 
-  <div class="youtube-link">
+  <!-- رابط اليوتيوب داخل اللوجو -->
+  <a href="https://youtu.be/HRQ1k5ff7JI?si=ySk0T07NoqSX6K1K" target="_blank">
     <img class="youtube-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo">
-    <p><a href="https://youtu.be/HRQ1k5ff7JI?si=ySk0T07NoqSX6K1K" target="_blank">دوسي على علامة اليوتيوب يا تفاحه ❤️</a></p>
+  </a>
+
+  <div class="youtube-link">
+    <p>دوسي على علامة اليوتيوب يا تفاحه ❤️</p>
   </div>
 
 </body>
